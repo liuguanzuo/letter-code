@@ -51,7 +51,7 @@ class Main extends Component{
                 _this.html(str.substring(0, index));
                 clearTimeout(timer);
             };
-            setTimeout(fn,150)
+            setTimeout(fn,100)
         };
         // 延迟1s开始
         setTimeout(timer,1000);
@@ -81,7 +81,7 @@ class Main extends Component{
                     _this.html(str.substring(0, index));
                     clearTimeout(timer);
                 };
-                setTimeout(fn,1)
+                setTimeout(fn,150)
             };
             // 延迟1s开始
             setTimeout(timer,8500);
