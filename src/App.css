@@ -10,7 +10,7 @@
   font-family: 	Microsoft YaHei;
   border: 5px solid black;
   padding: .5rem 2rem;
-  background: white;
+  background: #fff6ea;
   font-weight: 900;
   color: black;
   letter-spacing: 0.5px;
@@ -76,17 +76,16 @@
   position: absolute;
   top: -100px;
   left: 100px;
-  color: blue;
+  color: #2777ff;
   font-size: 24px;
 }
 
 .date{
   position: absolute;
   right: 25px;
-  color: blue;
+  color: rgb(91, 134, 200);
 }
 .date-text{
   font-size: 24px;
-  color:deeppink;
+  color: rgba(184, 37, 37, 0.76);
 }
-

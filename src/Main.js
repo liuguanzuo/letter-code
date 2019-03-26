@@ -81,7 +81,7 @@ class Main extends Component{
                     _this.html(str.substring(0, index));
                     clearTimeout(timer);
                 };
-                setTimeout(fn,200)
+                setTimeout(fn,1)
             };
             // 延迟1s开始
             setTimeout(timer,8500);
@@ -102,12 +102,12 @@ class Main extends Component{
         const date =()=>{
             if (this.state.date.d!==undefined){
                 const {d,hour,minute,second} = this.state.date
-                return (<p>我们已经一起走过了: <span className="date-text">{d}</span> 天 <span className="date-text">{hour}</span> 小时 <span className="date-text">{minute}</span> 分 <span className="date-text">{second}</span> 秒 </p>
+                return (<p>月华和十二已经认识了: <span className="date-text">{d}</span> 天 <span className="date-text">{hour}</span> 小时 <span className="date-text">{minute}</span> 分 <span className="date-text">{second}</span> 秒 </p>
                 )
             }
         }
         return(
-            <div className="App animated bounceInLeft">
+            <div className="App animated bounceInLeft" style={{height:'90%'}}>
             <div className="date">{date()}</div>
                 <div id="autotype1">
                     <h1 style={{fontWeight:900}}>(｡･∀･)ﾉﾞ嗨,十二！</h1>
@@ -117,23 +117,21 @@ class Main extends Component{
                 <p>今天是我们认识五个月的日子，从2018年10月28日到现在，我们一起经历了好多好多的事情，
                     有欢笑也有争吵，也曾因为一些事情闹过不愉快，但是都走过来了。</p>
                 <p>给你看看我珍藏到现在的表情吧！</p> <img src={pic} width="20%" height="20%" onError="imgerror(this)"></img>
-                <p>还记得第一次见到你，是在微信视频里面，你戴着一个超级大的帽子，还有一副超级大的墨镜，哈哈哈虽然之后就没看你再戴过了，但是还很怀念诶</p>
-                <p>以下省略一千字，临时想不到嘛...</p>
+                <p>还记得第一次见到你，是在微信视频里面，你戴着一个超级大的帽子，还有一副超级大的墨镜，哈哈哈虽然之后就没看你再戴过了，但是还是很怀念！</p>
+                <p>后来见面之后，印象最深的还是那一套搭配以及邢台各种好吃的东西，认识你之前，还真的不知道一顿没有肉的饭也可以那么好吃(炸鸡腿除外)~</p>
+                <p>不知道你什么时候还能再来北京，我还有好多地方没带你去呢。</p>
+                <p>好了以下省略一千字，暂时想不到了...</p>
                 <p>...</p>
                 <p>...</p>
-                <p>...</p>
-                <p>
-                    我不善于文字表达，写这一个网页和说那么多话也就想表达“你是猪”这简单的三个字而已。
-                    好期待以后生活啊，也不希望你或自己会突然的小时。
-                </p>
+                <p>我不善于文字表达，写这一个网页和说那么多话也就想认识你真好，仅此。</p>
+                <p>很期待以后的我们呢，希望你或我都不要在未来的某一天消失。</p>
                 <p>最后祝十二永远快快乐乐开开心心！</p>
                 <div style={{textAlign:'right'}}>
                     <p>最帅的♥刘月华</p>
-                    <p>2019年3月26日</p>
+                    <p>2019年3月28日</p>
                 </div>
             </div>
                 <audio id="audio" src={music2}></audio>
-                <button style={{float:'right'}} onClick={this.handleNext}>相册</button>
             </div>
 
         )
