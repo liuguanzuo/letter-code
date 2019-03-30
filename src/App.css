@@ -1,91 +1,169 @@
 
 .App {
-  position: fixed;
-  left: 50%;
-  top: 2%;
-  width:800px;
-  height: 650px;
-  margin-left: -400px;
-  margin-right: -325px;
-  font-family: 	Microsoft YaHei;
-  border: 5px solid black;
-  padding: .5rem 2rem;
-  background: #fff6ea;
-  font-weight: 900;
-  color: black;
-  letter-spacing: 0.5px;
-  line-height: 19px;
+    position: fixed;
+    left: 50%;
+    top: 2%;
+    width: 800px;
+    height: 650px;
+    margin-left: -400px;
+    margin-right: -325px;
+    font-family: Microsoft YaHei;
+    border: 5px solid black;
+    padding: .5rem 2rem;
+    background: #fff6ea;
+    font-weight: 900;
+    color: black;
+    letter-spacing: 0.5px;
+    line-height: 19px;
 }
 
 
-.envelope{
-  width: 500px;
-  height: 300px;
-  border: 3px solid pink;
-  position: fixed;
-  left: 35%;
-  transform: translate(-50%, 0);
-  bottom: 30%;
-  border-radius: 10px;
-  box-shadow: 4px 4px 2px #888888;
-  background-color: white;
-  font-weight: 900;
+.envelope {
+    width: 500px;
+    height: 300px;
+    border: 3px solid pink;
+    position: fixed;
+    left: 35%;
+    transform: translate(-50%, 0);
+    bottom: 30%;
+    border-radius: 10px;
+    box-shadow: 4px 4px 2px #888888;
+    background-color: white;
+    font-weight: 900;
 }
-.triangle-down{
-  width: 0;
-  height: 0;
-  border-left: 252px solid transparent;
-  border-right: 250px solid transparent;
-  border-top: 160px solid pink;
-  border-radius: 15px;
-  position: absolute;
-  left: -5px;
-  top: -1px;
+
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 252px solid transparent;
+    border-right: 250px solid transparent;
+    border-top: 160px solid pink;
+    border-radius: 15px;
+    position: absolute;
+    left: -5px;
+    top: -1px;
 }
-.triangle-up{
-  width: 0;
-  height: 0;
-  border-left: 250px solid transparent;
-  border-right: 254px solid transparent;
-  border-bottom: 150px solid pink;
-  border-radius: 15px;
-  position: absolute;
-  bottom: -1px;
-  left: -4px;
+
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 250px solid transparent;
+    border-right: 254px solid transparent;
+    border-bottom: 150px solid pink;
+    border-radius: 15px;
+    position: absolute;
+    bottom: -1px;
+    left: -4px;
 }
 
 @keyframes pound {
-  to { transform: scale(1.4); }
+    to {
+        transform: scale(1.4);
+    }
 }
 
-.heart{
-  width: 40px;
-  height: 40px;
-  z-index: 999;
-  position: absolute;
-  left: 225px;
-  top: 130px;
-  cursor: pointer;
-  animation: pound .25s infinite alternate;
+.heart {
+    width: 40px;
+    height: 40px;
+    z-index: 999;
+    position: relative;
+    left: 50%;
+    top: 300px;
+    cursor: pointer;
+    animation: pound .25s infinite alternate;
 }
 
-
-
-
-.text{
-  position: absolute;
-  top: -100px;
-  left: 100px;
-  color: #2777ff;
-  font-size: 24px;
+.letter {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    cursor: pointer;
+    animation: pound .25s infinite alternate;
 }
 
-.date{
-  position: absolute;
-  right: 25px;
-  color: rgb(91, 134, 200);
+.photo {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 21%;
+    top: 20%;
+    cursor: pointer;
+    animation: pound .25s infinite alternate;
 }
-.date-text{
-  font-size: 24px;
-  color: rgba(184, 37, 37, 0.76);
+.message {
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    left: 67%;
+    top: 60%;
+    cursor: pointer;
+    animation: pound .25s infinite alternate;
+}
+.stopletter {
+    width: 250px;
+    height: 175px;
+    position: absolute;
+    left: 44%;
+    top: 40%;
+    cursor: pointer;
+}
+.stopphoto {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 21%;
+    top: 20%;
+    cursor: pointer;
+}
+.stopmessage {
+    width: 300px;
+    height: 180px;
+    position: absolute;
+    left: 67%;
+    top: 60%;
+    cursor: pointer;
+}
+
+.focusLetter {
+    position: absolute;
+    /*color: #2777ff;*/
+    color:midnightblue;
+    left: 46%;
+    top: 62%;
+    font-size: 24px;
+    animation: pound .25s infinite alternate;
+}
+.focusPhoto {
+    position: absolute;
+    /*color: #2777ff;*/
+    color:midnightblue;
+    left: 23%;
+    top: 47%;
+    font-size: 24px;
+    animation: pound .25s infinite alternate;
+}
+.focusMessage {
+    position: absolute;
+    /*color: #2777ff;*/
+    color:midnightblue;
+    left: 69.5%;
+    top: 80%;
+    font-size: 24px;
+    animation: pound .25s infinite alternate;
+}
+.date {
+    position: absolute;
+    right: 25px;
+    color: rgb(91, 134, 200);
+}
+
+.date-text {
+    font-size: 24px;
+    color: rgba(184, 37, 37, 0.76);
+}
+
+.picin {
+
 }
